@@ -90,6 +90,8 @@ for i in range(rounds):
     result = compare_stats(player_pokemon, opponent_pokemon, chosen_stat)
 
     print("\nYour opponent's Pokémon is {}.".format(opponent_pokemon['name'].capitalize()))
+    print("\nOpponent's Pokémon stats:")
+    print_pokemon_stats(opponent_pokemon)
 
     if result == "player":
         print("You win this round! Your {} has a higher {} than your opponent's {}.".format(player_pokemon['name'].capitalize(), chosen_stat, opponent_pokemon['name'].capitalize()))
